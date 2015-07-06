@@ -7,7 +7,7 @@ day = gets.chomp.to_s
 # puts 'Your day of born then: ' + day + ', ' + month + ', ' + year + '.'
 def calculate_number_of_years(year, month, day)
 	minutes = Time.new - Time.mktime(year, month, day)
-	years = ((minutes/525949)/60).to_i
+	years = ((minutes/525600)/60).to_i
 end
 years = calculate_number_of_years(year, month, day)
 

@@ -1,7 +1,6 @@
-toast = Proc.new do
-  puts 'Cheers!'
+doYouLike = Proc.new do |aGoodThing|
+  puts 'I *really* like ' + aGoodThing + '!'
 end
 
-3.times do
-  toast.call
-end
+doYouLike.call 'chokolate'
+doYouLike.call 'ruby'

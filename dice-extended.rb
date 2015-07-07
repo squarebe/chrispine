@@ -6,13 +6,16 @@ class Die
 	end
 end
 
-dice = [Die.new]# ask how many time you'd like to roll
+puts 'How many times you\'d like to roll?'
+@rollnum = gets.to_i # ask how many time you'd like to roll
+
+dice = []
+(@rollnum).times do
+#5.times do
+	dice << Die.new
+end
 
 dice.each do |die|
 
-puts 'How many times you\'d like to roll?'
-rollnum = gets.to_i
-
-puts 'Here\'s your rolls:' + die.roll.to_s * rollnum
-
+puts 'Here\'s your rolls:' + die.roll.to_s
 end
